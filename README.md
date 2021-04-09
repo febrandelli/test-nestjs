@@ -36,7 +36,23 @@ $ npm install
 ```bash
 # run this comand
 $ docker-compose up -d
+
+# run this comand to access mysql cli
+$ docker exec -it 'container_name' bash
+
+#when you are in the container execute this comand
+$ mysql -p
+
+#insert your password default is root
+
+#execute this query
+create table user (
+  id int auto_increment primary key,
+  nome varchar(255),
+  idade int
+)
 ```
+
 
 ## Running the app
 
